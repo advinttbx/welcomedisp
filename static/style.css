@@ -8,34 +8,26 @@ h1 {
     text-align: center;
 }
 
-.card-container {
-    align-items: start;
-    display: grid;
-    grid-gap: 5px;
-    justify-items: start;
+.master-card-container {
+    display: flex;
+    flex-direction: row;
     margin: 5px;
 }
 
 .card {
     border: 1px solid black;
     box-shadow: 2px 1px 1px black;
-    padding: 2px;
+    padding: 5px;
+    margin: 5px;
 }
 
-.intro-text {
-    border: 1px solid red;
-    padding: 2px;
+.master-card-container > * {
+    max-width: 50%;
 }
 
-.title {
-    text-align: center;
-}
-
-.thinkbox {
-    width: 320px;
-    padding: 10px;
-    border: 5px solid gray;
-    margin: 0;
+.right-card-container {
+    display: flex;
+    flex-direction: column;
 }
 
 /* svg */
