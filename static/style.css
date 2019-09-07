@@ -6,6 +6,7 @@ body {
 
 h1 {
     text-align: center;
+
 }
 
 .master-card-container {
@@ -19,16 +20,49 @@ h1 {
     box-shadow: 2px 1px 1px black;
     padding: 5px;
     margin: 5px;
+    font-size: 20px;
+}
+
+.imgClass {
+    border: 1px solid black;
+    box-shadow: 2px 1px 1px black;
+    margin: 5px;
+    max-height: 50%;
+    max-width: 50%;
 }
 
 .master-card-container > * {
     max-width: 50%;
+    max-height: 50%;
 }
 
 .right-card-container {
     display: flex;
     flex-direction: column;
 }
+
+.header-container {
+    max-width: 1980px;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-and-content {
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    height: 500px;
+    width: 1307px;
+    /* background-color: yellow; */
+}
+
+.content {
+    max-width: 33%;
+    align-self: center;
+}
+
 
 /* svg */
 .str0 {stroke:black;stroke-width:3;stroke-linejoin:bevel;stroke-miterlimit:2.61313}
