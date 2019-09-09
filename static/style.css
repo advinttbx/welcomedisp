@@ -59,10 +59,18 @@ h1 {
 }
 
 .content {
-    max-width: 33%;
     align-self: center;
 }
 
+.image-and-hours {
+    position: relative;
+    float: left;
+}
+
+.info {
+    position: relative;
+    float: right;
+}
 
 /* svg */
 .str0 {stroke:black;stroke-width:3;stroke-linejoin:bevel;stroke-miterlimit:2.61313}
