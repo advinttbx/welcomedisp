@@ -1,6 +1,6 @@
 body {
     font-family: 'Titillium Web', sans-serif;
-    animation: bodyAnimation 3600s infinite 0s linear;
+    animation: bodyAnimation 30s infinite 0s linear;
 }
 
 h1 {
@@ -44,7 +44,7 @@ h1 {
     max-width: 1980px;
     display: flex;
     flex-direction: column;
-    animation: headerAnimation 3600s infinite 0s linear;
+    animation: headerAnimation 30s infinite 0s linear;
 }
 
 .image-and-content {
@@ -70,6 +70,12 @@ h1 {
 .info {
     position: relative;
     float: right;
+}
+
+.open {
+    font-size: 70px;
+    text-align: center;
+    visibility: hidden;
 }
 
 @keyframes headerAnimation {
