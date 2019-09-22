@@ -3,12 +3,22 @@ const hours = [[13, 19],[15, 19],[15, 19],[],[],[15, 19],[15, 19]];
 $(document).ready(function() {
 
     setInterval(function() {
-        var date = new Date();
-        if(hours[date.getDay()] != "" && date.getHours() >= hours[date.getDay()][0] && date.getHours() < hours[date.getDay()][1]) {
-            $(".open").css("visibility", "visible");
+        const date = new Date();
+        let isWithinOpenHours = false;
+        if (hours[date.getDay()] != "") {
+            isWithinOpenHours = 
+                date.getHours() >= hours[date.getDay()][0] &&
+                date.getHours() < hours[date.getDay()][1];
+        }
+        if (isWithinOpenHours) {
+            $(".open").show();
+            $(".closed").hide();
         }
         else {
-            $(".open").css("visibility", "hidden");
+            $(".open").hide();
+            $(".closed").show();
         }
     }, 1000);
+    
+
 });
