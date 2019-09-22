@@ -1,11 +1,10 @@
 body {
-    font-family: 'Titillium Web', sans-serif;
     animation: bodyAnimation 30s infinite 0s linear;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 h1 {
     text-align: center;
-
 }
 
 .master-card-container {
@@ -22,14 +21,6 @@ h1 {
     font-size: 20px;
 }
 
-.imgClass {
-    border: 1px solid black;
-    box-shadow: 2px 1px 1px black;
-    margin: 5px;
-    max-height: 50%;
-    max-width: 50%;
-}
-
 .master-card-container > * {
     max-width: 50%;
     max-height: 50%;
@@ -41,10 +32,10 @@ h1 {
 }
 
 .header-container {
-    max-width: 1980px;
+    animation: headerAnimation 30s infinite 0s linear;
     display: flex;
     flex-direction: column;
-    animation: headerAnimation 30s infinite 0s linear;
+    max-width: 1980px;
 }
 
 .image-and-content {
@@ -55,27 +46,16 @@ h1 {
 .image {
     height: 500px;
     width: 1307px;
-    /* background-color: yellow; */
 }
 
 .content {
     align-self: center;
 }
 
-.image-and-hours {
-    position: relative;
-    float: left;
-}
-
-.info {
-    position: relative;
-    float: right;
-}
-
-.open {
+.open, .closed {
+    display: none;
     font-size: 70px;
     text-align: center;
-    visibility: hidden;
 }
 
 @keyframes headerAnimation {
